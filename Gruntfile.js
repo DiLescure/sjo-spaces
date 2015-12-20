@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-  var folderRgx = new RegExp('^[^\\/?%*:|"<>\.\s]+$');
+  var folderRgx = new RegExp('^[^\\/?%*:|"<>\. ]+$');
   
   grunt.loadNpmTasks('grunt-file-missing');
   grunt.loadNpmTasks('grunt-mkdir');
@@ -30,7 +30,11 @@ module.exports = function(grunt) {
               type: 'input',
               message: 'Name of app\'s folder',
               default: 'new-app',
-              validate: function(value){ return folderRgx.test(value); },
+              validate: function(value){
+                var isValid = folderRgx.test(value);
+                if (!isValid) grunt.log.warn('Invalid Name!');
+                return isValid;
+              },
               filter:  function(value){ return [value]; }
             }
           ]
