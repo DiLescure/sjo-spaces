@@ -16,6 +16,20 @@ var homeHost = createVirtualHost("sjo.space", "homeland");
 //Use the virtual hosts
 app.use(homeHost);
 
+//Error handling
+app.use(function(req, res, next) { // i catch 404s
+  res.status(404);
+  res.render('Get out of here right meow...');
+});
+
+app.use(function(err, req, res, next) { // i catch errors, but 404 is not an error
+  res.status(err.status || 500);
+  res.render('error', {
+    message: err.message,
+    error: {}
+  });
+});
+
 //Start server
 var port = process.env.PORT || 8080;
 app.listen( port, function() {
