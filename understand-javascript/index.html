@@ -8,35 +8,161 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/semantic.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/monokai.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/languages/javascript.min.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/semantic.min.js"></script>
     <script src="js/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="ui inverted segment">
-          <h1 class="ui center aligned header green inverted">Understanding JavaScript</h1>
+          <h1 class="ui center aligned header">Understanding JavaScript</h1>
         </div>
       </div>
     </header>
     <main role="main">
     <div class="container">
-
       <div class="ui raised very padded text container segment">
         <h2 class="ui dividing header">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-square fa-stack-2x"></i>
-            <i class="fa fa-file-code-o fa-stack-1x fa-inverse"></i>
-          </span>
-          Learning Journal
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-file-code-o fa-stack-1x fa-inverse"></i>
+        </span>
+        Learning Journal
         </h2>
 
+        <h3 class="ui header"><i class="fa fa-cogs"></i> Conceptual Aside</h3>
+        
+        <div class="ui cards">
+          <div class="card">
+            <div class="content">
+              <div class="header">Syntax Parser</div>
+              <div class="description">
+                A program that reads your code and determines what it does and if its grammar is valid.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Lexical Environment</div>
+              <div class="description">
+                Where something sits physically in the code I write.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Execution Context</div>
+              <div class="description">
+              Wrapper to help manage the code that is running.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Name/Value Pairs</div>
+              <div class="description">
+                A name which maps to a unique value.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Objects</div>
+              <div class="description">
+                A collection of name/value pairs.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Single Thread</div>
+              <div class="description">
+                One command at the time.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Synchronous</div>
+              <div class="description">
+                One at the time in order.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Invocation</div>
+              <div class="description">
+                Running (calling) a function in JavaScript by using parenthesis ();
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Variable Environment</div>
+              <div class="description">
+                Where the variables live and how they relate to each other in memory.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Scope</div>
+              <div class="description">
+                Where a variable is available in the code (and if it's truly the same or a new copy).
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Asynchronous</div>
+              <div class="description">
+                More than one at the time.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Dynamic Typing</div>
+              <div class="description">
+                You don't tell the engine what type of data a variable holds, it figures it out while your code is running.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Primitive Type </div>
+              <div class="description">
+                A type of data that represents a single value that is not an object.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Undefined &amp; Null</div>
+              <div class="description">
+                Represents lack of existence. You should never set a variable to undefined, for that you use null.
+              </div>
+            </div>
+          </div>
 
+
+        </div>
+
+      <!--  <pre><code class="javascript">
+        function hello(){
+          alert("Hello");
+        }
+        </code></pre> -->
 
       </div>
-
+      
       </main>
       <footer>
         <div class="container">

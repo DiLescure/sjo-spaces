@@ -1,1 +1,8 @@
 /* custom styles here */
+h1{
+	color: #3FC380 !important;
+
+}
+.fa-cogs{
+	color: #2ECC71;
+}
