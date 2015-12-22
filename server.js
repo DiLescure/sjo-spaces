@@ -12,9 +12,11 @@ var app = express();
 
 //Create the virtual hosts
 var homeHost = createVirtualHost("sjo.space", "homeland");
+var understandHost = createVirtualHost("sjo.space", "undestand-javascript");
 
 //Use the virtual hosts
 app.use(homeHost);
+app.use(understandHost);
 
 //Error handling
 app.use(function(req, res, next) { // i catch 404s
