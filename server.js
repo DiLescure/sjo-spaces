@@ -12,7 +12,7 @@ var app = express();
 
 //Create the virtual hosts
 var homeHost = createVirtualHost("sjo.space", "homeland");
-var understandHost = createVirtualHost("sjo.space", "understand-javascript");
+var understandHost = createVirtualHost("understand.sjo.space", "understand-javascript");
 
 //Use the virtual hosts
 app.use(homeHost);
