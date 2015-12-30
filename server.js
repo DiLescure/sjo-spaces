@@ -13,10 +13,12 @@ var app = express();
 //Create the virtual hosts
 var homeHost = createVirtualHost("sjo.space", "homeland");
 var understandHost = createVirtualHost("understand.sjo.space", "understand-javascript");
+var ziplinePortfolioHost = createVirtualHost("portfolio.sjo.space", "portfolio");
 
 //Use the virtual hosts
 app.use(homeHost);
 app.use(understandHost);
+app.use(ziplinePortfolioHost);
 
 //Error handling
 app.use(function(req, res, next) { // i catch 404s
